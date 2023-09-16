@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+
+
+
+ul{
+  list-style: none;
+}
+
+.container{
+  max-width: 100rem;
+  margin: 0 auto;
+
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  
+}
+
+#nav{
+  background-color: rgb(9, 9, 8);
+  backdrop-filter:blur(6px);
+  display: block;
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  height: 13vh;
+  z-index:999;
+
+}
+#nav *{
+  color: white;
+  letter-spacing: 1px;
+
+}
+
+.navbar{
+  justify-content: space-between;
+  padding: 1.2rem 
+}
+.navbar .navbar-brand{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#nav .navbar-nav{
+  gap: 1.4rem;
+}
+
+#nav .navbar-nav li a{
+  position: relative;
+}
+
+#nav .navbar-nav li a::before{
+  position: absolute;
+  bottom: -2px;
+  content: "";
+  width: 0;
+  left: 0;
+  background-color: wheat;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav .navbar-nav li:hover a::before{
+  width: 100%;
+}
+
+#home{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+}
+
+#video{
+  position: absolute;
+  z-index: -2;
+
+
+}
+#home::after{
+  content: "";
+  position: absolute;
+  background-color:rgb(0,0,0,0,567);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+
+}
+
+#home .conain{
+
+height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+color: rgb(0, 0, 0);
+gap: 2rem;
+padding: 0 3rem;
+}
+#home .conain h1{
+  font-size: 4rem;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  line-height: 1;
+
+}
+#home .conain h1 span{
+  font-size: 2rem;
+}
+
+#home .conain p{
+  font-size: 1.3rem;
+  width: 52%;
+}
+
+#home .conain .button{
+  font-size: 1rem;
+  padding: 0.9rem 1.8rem;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  background-color: grey;
+  width: fit-content;
+  backdrop-filter: blur(6px);
+}
+
+
